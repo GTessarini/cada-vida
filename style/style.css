@@ -1,3 +1,7 @@
+body{
+    font-family: Arial;   
+}
+
 .horizontal-vertical-align{
     display: flex;
     justify-content: center;
