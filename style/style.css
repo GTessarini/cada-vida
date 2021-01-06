@@ -1,0 +1,15 @@
+.horizontal-vertical-align{
+    display: flex;
+    justify-content: center;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+#btn-atualizar{   
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+}
