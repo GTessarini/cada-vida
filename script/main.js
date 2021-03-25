@@ -38,7 +38,10 @@ const drawGraphic = (dias, coordX, coordY) => {
     let obitosPorDia = null;
     ctx.font = "15px Arial";
     ctx.fillStyle = "black";
-    ctx.fillText(dias[0]["_id"], coordX, coordY);
+    /* First Date */
+    coordX += spacingHorizontal * 3;
+    ctx.fillText(dias[0]["_id"], coordX, coordY - 10);
+    coordX += spacingHorizontal * 3;
     for(dia of dias){
         coordX += spacingHorizontal;
         coordY = canvas.height;     
@@ -50,7 +53,8 @@ const drawGraphic = (dias, coordX, coordY) => {
         }
     }
     ctx.fillStyle = "black";
-    ctx.fillText(dias[dias.length - 1]["_id"], (coordX + 10), canvas.height);
+    /* Last Date */
+    ctx.fillText(dias[dias.length - 1]["_id"], (coordX + 10), canvas.height - 10);
 }
 
 let dadosCovid = null;
